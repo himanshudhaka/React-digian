@@ -1,38 +1,324 @@
-.App {
+
+.navbar-expand-lg .navbar-nav{
+  margin-left: auto;
+}
+
+h1{
+  font-weight: 600;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-column{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column p{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.services .card img{
+  width: 50%;
+  padding: 5%;
+  margin-left: 25%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-us img{
+  width: 80%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.about-us .flex{
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.about-us a{
+  width: 25%;
+}
+
+.case-study h1{
+  text-align: center;
+}
+
+.case-study img{
+  width: 100%;
+}
+
+
+
+.form-group{
+  margin: 15px 0px;
+}
+
+.form-map{
+  margin-top: 40px;
+}
+
+
+
+.services .card{
+  width: 18rem;
+}
+
+
+/*------ NavBar ---------*/
+
+nav{
+font-weight: 600;
+background-color: #895ab6;
+}
+.navbar-light .navbar-brand{
+color: white !important;
+}
+.navbar-light .navbar-nav .nav-link{
+color: white !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+color: #895ab6 !important;
+background-color: white;
+border-radius: 10px;
+}
+.og-btn {
+color: white !important;
+background-color: orange !important;
+}
+
+/*----- Hero-page -----*/
+
+.hero-page{
+background-color: #895ab6;
+margin-top: -1px !important;
+}
+.hero-page{
+padding: 50px 0px;
+margin: auto;
+color: white;
+}
+.hero-page .row{
+width: 90%;
+margin: auto;
+}
+.hero-page img{
+width: 80%;
+height: 100%;
+margin-left: 10%;
+}
+.hero-page button{
+background-color: #5c0da7;
+color: white;
+border: none;
+}
+.hero-page button:hover{
+background-color: #2f0755;
+color: white;
+border: none;
+}
+
+/*---- Services ----*/
+
+.services{
+margin-top: 60px;
+}
+.services button{
+margin-top: 30px;
+background-color: #895ab6;
+color: white;
+border: none;
+}
+.services button:hover{
+background-color: #5c0da7;
+}
+.services .card{
+margin: auto;
+width: 94%;
+}
+
+
+/*----- About -----*/
+
+.about-us{
+  background-color: #895ab6;
+}
+.about-us{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+/*----- case-study----*/
+
+.case-study h1{
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/*-----Footer ------*/
+
+.social-icon li{
+  margin: 0px 5px;
+}
+
+footer{
+  background-color: #895ab6;
+  color: white;
+  padding: 10px 20%;
+  margin-top: 60px;
+}
+
+footer .row{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 8%;
+}
+
+footer .para{
+  text-align: center;
+}
+
+footer .form-group .btn{
+  margin-top: 20px;
+}
+
+
+/*---- form -----*/
+
+
+
+/*---- Testimonials----*/
+
+.testimonials{
+  background-color: #895ab6;
+  color: white;
+  position: relative;
+  padding-top: 50px;
+  border-radius: 10px;
+  margin-top: 80px;
+
+}
+h1{
+  text-align: center;
+}
+.testimonials img{
+  position: absolute;
+}
+.testimonials span{
+  font-size: 30px;
+}
+
+
+
+
+/*---- Media Query ----*/
+
+@media only screen and (min-width: 600px) { 
+
+.hero-page{
+  border-bottom-right-radius: 350px;
+}
+.hero-page img{
+  margin-left: 18%;
+}
+.row{
+  padding: 5% 4%;
+}
+.about-us{
+  border-top-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+}
+
+
+.case-study .card1{
+  width: 80%; 
+  margin-left: 15%;
+}
+.case-study .card2{
+  width: 80%; 
+  margin-right: 15%;
+}
+
+footer{
+  border-top-left-radius: 275px;
+}
+
+.testimonials img{
+  height: 50%;
+  top: -25%;
+  border-radius: 50%;
+}
+
+.testimonials {
+  width: 60% !important;
+}
+
+}
+
+@media only screen and (max-width:600px) {
+ .hero-page .flex{
+   margin-top: 30px;
+ }
+
+
+ .services .col-sm-3{
+   padding: 20px 0px;
+ }
+
+ .about-us{
+   padding-top: 30px;
+   padding-bottom: 30px;
+   margin-top: 30px;
+ }
+
+ .about-us .flex{
+   justify-content: center;
+   align-items: center;
+ }
+
+ .about-us .flex p{
+   text-align: center;
+ }
+
+ .about-us img{
+   margin: 30px;
+ }
+
+ .case-study h1{
+   margin-top: 30px;
+ }
+
+ .case-study .col-sm{
+   margin-bottom: 15px;
+ }
+
+ footer .col-sm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer .col-sm ul{
+  margin: auto;
+}
+
+.form-map .bn{
+  text-align: center;
+}
+.form-map h2{
+  text-align: center;
+}
+
+.testimonials {
+  width: 90% !important;
+}
+.testimonials img{
+  width: 40%;
+  top: -65px;
+  border-radius: 50%;
+}
+.testimonials h1{
+  margin-top: 60px !important;
+}
+
 }

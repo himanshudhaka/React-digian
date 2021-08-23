@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
+import NavBar from './components/NavBar';
+import Home from './components/Home';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Footer from './components/Footer';
+import About from './components/About';
+import Services from './components/Services';
+import Form from './components/Form';
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'font-awesome/css/font-awesome.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={ About } />
+          <Route path="/services" component={ Services } />
+          <Route path="/contact" component={ Form } />
+        </Switch>
+      <Footer />
+    </Router>   
   );
 }
 
 export default App;
+
