@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
@@ -12,24 +12,26 @@ import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'font-awesome/css/font-awesome.min.css';
-import Formapi from './components/Formapi';
+import Api from './components/Api';
+
 
 function App() {
   return (
+    <>
+    
+      {/* <Api /> */}
 
-    // <Formapi />
-
-
-    <Router>
-      <NavBar />
+      <Router>
+        <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={ About } />
-          <Route path="/services" component={ Services } />
-          <Route path="/contact" component={ Form } />
+          <Route path="/about" component={About} />
+          <Route path="/services" component={Services} />
+          <Route path="/contact" component={Form} />
         </Switch>
-      <Footer />
-    </Router>   
+        <Footer />
+      </Router>
+    </>
   );
 }
 
