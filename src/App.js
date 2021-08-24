@@ -12,9 +12,14 @@ import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'font-awesome/css/font-awesome.min.css';
+import Formapi from './components/Formapi';
 
 function App() {
   return (
+
+    // <Formapi />
+
+
     <Router>
       <NavBar />
         <Switch>
