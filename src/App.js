@@ -19,9 +19,9 @@ function App() {
   return (
     <>
     
-      {/* <Api /> */}
+      <Api />
 
-      <Router>
+      {/* <Router>
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
@@ -30,7 +30,7 @@ function App() {
           <Route path="/contact" component={Form} />
         </Switch>
         <Footer />
-      </Router>
+      </Router> */}
     </>
   );
 }

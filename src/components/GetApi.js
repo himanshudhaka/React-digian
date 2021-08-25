@@ -10,7 +10,7 @@ export default function GetApi() {
         e.preventDefault();
         // console.log();
         axios.get(`http://198.12.248.18:8080/api/v1/student/bymobile/${phn}`).then(res =>{
-            console.log(res);
+            console.log(res.data);
             console.log(res.status);
         });
     }
