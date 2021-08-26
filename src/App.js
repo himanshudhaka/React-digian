@@ -13,24 +13,27 @@ import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'font-awesome/css/font-awesome.min.css';
 import Api from './components/Api';
+import Counter from './components/Counter';
+import Counterpage from './components/Counterpage';
+import Countershow from './components/Countershow';
 
 
 function App() {
   return (
     <>
     
-      <Api />
+      <Router>
+      <Counter />
+      <Switch>
+          <Route exact path="/" component={Counterpage} />
+          <Route path="/view" component={Countershow} />
+      </Switch>
+      </Router>
+      
 
-      {/* <Router>
-        <NavBar />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/services" component={Services} />
-          <Route path="/contact" component={Form} />
-        </Switch>
-        <Footer />
-      </Router> */}
+      
+
+     
     </>
   );
 }
